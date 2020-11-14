@@ -19,26 +19,21 @@
 		"format": "tsfmt"
 	},
 	"dependencies": {
-		"capture-error": "https://github.com/selfrefactor/capture-error#1.1.0",
-		"fs-extra": "^5.0.0",
-		"rambdax": "^0.8.10",
-		"string-fn": "^1.7.0"
+		"fs-extra": "9.0.1",
+		"rambdax": "7.0.1",
+		"string-fn": "3.1.0"
 	},
 	"devDependencies": {
-		"@types/jest": "^22.1.4",
-		"@types/node": "^9.4.6",
-		"commit-message": "https://github.com/selfrefactor/commit-message#2.3.2",
-		"jest": "^22.4.2",
-		"log": "https://github.com/selfrefactor/log#0.8.0",
-		"ts-jest": "^22.4.1",
-		"tslint": "^5.9.1",
-		"typescript": "^2.8.0-insiders.20180127",
-		"typescript-formatter": "^7.1.0",
-		"watch-fn": "https://github.com/selfrefactor/watch-fn#0.8.1"
+		"@types/jest": "26.0.15",
+		"@types/node": "14.14.7",
+		"jest": "26.6.3",
+		"ts-jest": "26.4.4",
+		"typescript": "4.0.5",
+		"watch-fn": "1.1.2"
 	},
 	"jest": {
 		"transform": {
-			"^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+			".+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
 		},
 		"testRegex": ".+src/.+.spec.ts$",
 		"moduleFileExtensions": [

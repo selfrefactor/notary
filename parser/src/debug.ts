@@ -1,9 +1,5 @@
-import { captureError } from 'capture-error'
 import { readFileSync, unlinkSync } from 'fs'
 import { resolve } from 'path'
-import { exec } from './modules/exec'
-import { getResult } from './modules/getResult'
-import { getText } from './modules/getText'
 import { getResultSamostoyatelen } from './samostoyatelen/getResult'
 const TEMP_FILE = 'TEMP_SAMOSTOYATELEN.txt'
 
@@ -23,4 +19,6 @@ export async function notary(sourceFilePath: string): Promise<void> {
   }
 }
 
-notary('/home/just/repos/notary/files/samostoyatelenObekt.pdf').then(console.log)
+const testPath = resolve(__dirname, '../assets/samostoyatelenObekt.pdf')
+
+notary(testPath)
