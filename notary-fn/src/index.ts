@@ -22,11 +22,11 @@ function samostoyatelen(convertedText: string): string {
 
 export async function notary(
   textInput: string,
-  modeRaw?: Mode,
+  mode?: Mode,
 ): Promise<string> {
-  const mode = defaultTo('POZEMLEN', modeRaw)
+  const modeInput = defaultTo('POZEMLEN', mode)
 
   if (textInput.length < 100) return ''
 
-  return methods[mode](textInput)
+  return methods[modeInput](textInput)
 }
